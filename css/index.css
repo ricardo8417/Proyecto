@@ -1,132 +1,195 @@
-body {
-    margin: 0;
-    background-color: #FBF5EF;
-}
-
-main {
-    display: flex;
-    justify-content: space-between;
-    height: 90px;
-    width: 100%;
-    background-color: #F5D0A9;
-    top: 0;
-    flex-wrap: wrap;
-}
-
-main .logo {
-    display: flex;
-    align-items: center;
-    margin-left: 50px;
-}
-
-main .logo h1 {
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: 10px;
-    font-size: 30px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: #61380B;
-    font-weight: 800;
-}
-
-main .logo img {
-    height: 70px;
-    width: 70px;
-}
-
-main ul {
-    list-style: none;
-    margin-right: 400px;
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
-    width: 40%;
-    font-weight: 600px;
-    align-items: center;
-    color: #61380B;
-    font-size: 20px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-main ul li:hover {
-    color: red;
-}
-
-header {
-    text-align: center;
-    padding-top: 30px;
-}
-
-header h1 {
-    font-size: 60px;
-    color: #61380B;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-header p {
-    font-size: 40px;
-    color: #61380B;
-}
-
-header .intro {
-    width: 800px;
-}
-
-#Publicidad {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
-
-.text-publish {
-    width: 100%;
-}
-
-.text-publish h2 {
-    margin-top: 100px;
-    font-size: 50px;
-    color: #61380B;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    text-align: center;
-}
-
-.text-publish p {
-    margin-top: 50px;
-    max-width: 100%;
-    padding-left: 20%;
-    padding-right: 20%;
-    text-align: center;
-    color: #61380B;
-    font-size: 35px;
-}
-
-.imagenes {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    flex-wrap: wrap;
-    margin-top: 250px;
-}
-
-.imagenes .imagen {
-    width: 500px;
-    padding-left: 100px;
-    text-align: center;
-}
-
-.imagenes p {
-    padding-left: 10px;
-    width: 100%;
-}
-
-.Descripcion {
-    margin-top: 200px;
-}
-
-.imagenes img {
-    margin-top: 20px;
-    height: 200px;
-    width: 300px;
-}
+    body {
+        margin: 0;
+        background-color: #FBF5EF;
+    }
+    
+    main {
+        display: flex;
+        justify-content: space-between;
+        height: 90px;
+        width: 100%;
+        background-color: #F5D0A9;
+        top: 0;
+        flex-wrap: wrap;
+    }
+    
+    main .logo {
+        display: flex;
+        align-items: center;
+        margin-left: 50px;
+    }
+    
+    main .logo h1 {
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: 10px;
+        font-size: 30px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: #61380B;
+        font-weight: 800;
+    }
+    
+    main .logo img {
+        height: 70px;
+        width: 70px;
+    }
+    
+    main ul {
+        list-style: none;
+        margin-right: 400px;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        width: 40%;
+        font-weight: 600px;
+        align-items: center;
+        color: #61380B;
+        font-size: 20px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    
+    main ul li:hover {
+        color: red;
+    }
+    
+    header {
+        text-align: center;
+        padding-top: 30px;
+    }
+    
+    header h1 {
+        font-size: 60px;
+        color: #61380B;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    
+    header p {
+        font-size: 40px;
+        color: #61380B;
+    }
+    
+    header .intro {
+        width: 800px;
+    }
+    
+    #Publicidad {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .text-publish {
+        width: 100%;
+    }
+    
+    .text-publish h2 {
+        margin-top: 100px;
+        font-size: 50px;
+        color: #61380B;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-align: center;
+    }
+    
+    .text-publish p {
+        margin-top: 50px;
+        max-width: 100%;
+        padding-left: 20%;
+        padding-right: 20%;
+        text-align: center;
+        color: #61380B;
+        font-size: 35px;
+    }
+    
+    .imagenes {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        flex-wrap: wrap;
+        margin-top: 250px;
+    }
+    
+    .imagenes .imagen {
+        width: 500px;
+        padding-left: 100px;
+        text-align: center;
+    }
+    
+    .imagenes p {
+        padding-left: 10px;
+        width: 100%;
+    }
+    
+    .Descripcion {
+        margin-top: 200px;
+    }
+    
+    .imagenes img {
+        margin-top: 20px;
+        height: 200px;
+        width: 300px;
+    }
+    /* Estilos responsivos del mapa de contactos */
+    
+    .contenedor {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        border: 1px solid black;
+    }
+    
+    .map-responsive {
+        overflow: hidden;
+        padding-bottom: 30%;
+        position: relative;
+        height: 0;
+        margin-top: 15%;
+        display: flex;
+        left: 30%;
+        right: 30%;
+    }
+    
+    .map-responsive iframe {
+        left: 0;
+        top: 0;
+        height: 90%;
+        width: 50%;
+        position: absolute;
+    }
+    
+    .formulario {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        width: 100%;
+        border: 1px solid grey;
+        justify-content: center;
+    }
+    
+    .formulario .input {
+        text-align: center;
+        width: 75%;
+        position: relative;
+        float: left;
+    }
+    
+    .formulario .col-sm-6 {
+        width: 25%;
+        float: left;
+        text-align: center;
+        font-size: 12px;
+        line-height: 32px;
+        padding-left: 0;
+        padding-right: 0;
+        padding: 0;
+        border: 1px solid #61380B;
+    }
+    
+    .formulario .input .nombre {
+        width: 25%;
+        height: 24px;
+        padding: 6px 12px;
+        line-height: 1.428571429;
+        text-align: center;
+    }
