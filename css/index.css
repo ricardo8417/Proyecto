@@ -1,151 +1,438 @@
-    body {
-        margin: 0;
-        background-color: #FBF5EF;
-        padding: 0;
-    }
-    /*Contenedor padre de lpágina*/
-    
-    .contenedor {
-        width: 100%;
-    }
-    /*Estilos para el menu*/
-    
-    .main {
+body {
+    margin: 0;
+    background-color: #FBF5EF;
+    padding: 0;
+}
+
+
+/*Contenedor padre de lpágina*/
+
+.contenedor {
+    width: 100%;
+}
+
+
+/*Estilos para el menu*/
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+    width: 100%;
+    background-color: #F5D0A9;
+}
+
+.logo {
+    display: flex;
+    margin-left: 10px;
+}
+
+.logo h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 10px;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #61380B;
+    font-weight: 800;
+}
+
+.logo img {
+    height: 70px;
+    width: 70px;
+}
+
+.menu ul {
+    list-style: none;
+    margin-right: 400px;
+    padding: 0;
+    width: 100%;
+    font-weight: 600px;
+    color: #61380B;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.menu ul li:hover {
+    color: red;
+}
+
+.menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/*Estilos para el titulo principal*/
+
+.header {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.header h1 {
+    font-size: 60px;
+    color: #61380B;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.header p {
+    font-size: 40px;
+    color: #61380B;
+}
+
+.header .intro {
+    width: 800px;
+}
+
+
+/*Estilos para el titulo de promociones*/
+
+#Publicidad {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.text-publish {
+    width: 100%;
+}
+
+.text-publish h2 {
+    margin-top: 100px;
+    font-size: 40px;
+    color: #61380B;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.text-publish p {
+    margin-top: 50px;
+    max-width: 100%;
+    padding-left: 20%;
+    padding-right: 20%;
+    text-align: center;
+    color: #61380B;
+    font-size: 25px;
+}
+
+
+/*Estilos publicidad de imagenes*/
+
+.imagenes {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.imagenes .imagen {
+    width: 500px;
+    padding-left: 100px;
+    text-align: center;
+}
+
+.imagenes p {
+    padding-left: 10px;
+    width: 100%;
+}
+
+.imagen .Descripcion {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+.imagenes img {
+    margin-top: 20px;
+    height: 200px;
+    width: 300px;
+}
+
+
+/* Estilos responsivos del mapa de contactos */
+
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 30%;
+    position: relative;
+    height: 0;
+    margin-top: 15%;
+    display: flex;
+    left: 30%;
+    right: 30%;
+}
+
+.map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 90%;
+    width: 50%;
+    position: absolute;
+}
+
+
+/*Estilos para el formulario de Contacto*/
+
+.formulario {
+    display: flex;
+    width: 30%;
+    border: 4px solid #DBA901;
+    align-items: center;
+    margin-bottom: 30%;
+    margin-left: 680px;
+    margin-top: 5%;
+    padding: 20px;
+}
+
+.input {
+    width: 100%;
+    position: relative;
+    float: left;
+    text-align: center;
+    margin-top: 12px;
+    margin-bottom: 10px;
+}
+
+.input .nombre {
+    width: 30%;
+    height: 24px;
+    text-align: center;
+}
+
+.input .mail {
+    margin-top: 20px;
+    width: 30%;
+    height: 24px;
+    padding: 3px 3px;
+    text-align: center;
+}
+
+.input .descripcion {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    display: inline-block;
+    width: 200px;
+}
+
+.input .servicio {
+    margin-top: 20px;
+    width: 30%;
+    height: 24px;
+    padding: 3px 3px;
+    text-align: center;
+}
+
+.input .telefono {
+    margin-top: 20px;
+    width: 30%;
+    height: 24px;
+    padding: 3px 3px;
+    text-align: center;
+}
+
+.input .asunto {
+    margin-top: 20px;
+    width: 30%;
+    height: 24px;
+    padding: 3px 3px;
+    text-align: center;
+}
+
+.input .panel-mensaje {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    /*display: inline-block;*/
+    width: 200px;
+    float: left;
+    line-height: 32px;
+}
+
+.input .mensaje {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    margin: center;
+}
+
+.input .enviar {
+    text-align: center;
+    width: 50%;
+    height: 40%;
+    font-size: 18px;
+}
+
+.input .enviar:hover {
+    background-color: red;
+}
+
+.text-publish-formulario {
+    margin-top: 0;
+    max-width: 100%;
+    padding-left: 20%;
+    padding-right: 20%;
+    text-align: center;
+    color: #61380B;
+    font-size: 20px;
+    margin-bottom: 15%;
+}
+
+
+/*Estilos foooter*/
+
+.footer {
+    background: #3A2F0B;
+    color: white;
+    height: 100%;
+    width: 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    float: left;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+@media (max-width: 1200px) {
+    .formulario {
         display: flex;
-        justify-content: space-between;
-        height: 90px;
+        margin-left: 400px;
+    }
+}
+
+@media (min-width: 121px) and (max-width: 300px) {
+    .formulario {
         width: 100%;
-        background-color: #F5D0A9;
-    }
-    
-    .logo {
+        margin-left: 0;
         display: flex;
-        margin-left: 10px;
+        border: none;
+        align-items: center;
+        position: relative;
     }
-    
-    .logo h1 {
-        margin-top: 0;
-        margin-bottom: 0;
-        margin-left: 10px;
-        font-size: 30px;
+    .input {
+        width: 90%;
+        /* position: relative;*/
+        float: left;
+        text-align: center;
+        margin-top: 12px;
+        margin-bottom: 10px;
+    }
+    .input .mensaje {
+        width: 100%;
+        display: flex;
+        justify-content: left;
+        margin: center;
+    }
+    .input .descripcion {
         font-family: Georgia, 'Times New Roman', Times, serif;
-        color: #61380B;
-        font-weight: 800;
-    }
-    
-    .logo img {
-        height: 70px;
-        width: 70px;
-    }
-    
-    .menu ul {
-        list-style: none;
-        margin-right: 400px;
-        padding: 0;
-        width: 100%;
-        font-weight: 600px;
-        color: #61380B;
         font-size: 20px;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
+        display: inline-block;
+        width: 100%;
     }
-    
-    .menu ul li:hover {
-        color: red;
+    .input .nombre {
+        margin-top: 20px;
+        width: 98%;
+        height: 24px;
+        text-align: center;
     }
-    
+    .main {
+        position: fixed;
+        background-color: transparent;
+        left: 0;
+        top: 0;
+        height: 30px;
+        width: 30px;
+        padding: 20px 20px;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        -webkit-transition: -webkit-transform 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+        transition: transform 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+        z-index: 2;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none
+    }
+    .main.is.active {
+        background-color: none;
+    }
+    .menu.is.active {
+        transform: translate3d(0px, 0px, 0px);
+    }
     .menu {
+        background-color: rgba(255, 255, 255, 0.95);
+        bottom: 0;
+        height: 100%;
+        left: 0;
+        overflow-y: scroll;
+        position: fixed;
+        top: 0;
+        transform: translate3d(0px, -100%, 0px);
+        transition: transform 0.35s cubic-bezier(0.05, 1.04, 0.72, 0.98) 0s;
         width: 100%;
-        display: flex;
-        justify-content: space-between;
+        z-index: 1001;
     }
-    /*Estilos para el titulo principal*/
-    
-    .header {
+    .menu -ul {
+        margin: 0;
+        padding: 0;
+    }
+    .menu ul li {
+        list-style: none;
         text-align: center;
-        padding-top: 30px;
+        font-family: Verdadna, Arial, Helvetica;
+        font-size: 1.5rem;
+        line-height: 3em;
+        height: 3em;
+        color: #369;
+        text-transform: none;
+        font-weight: bold;
     }
-    
-    .header h1 {
-        font-size: 60px;
-        color: #61380B;
-        font-family: Georgia, 'Times New Roman', Times, serif;
+    .menu ul li a {
+        text-decoration: none;
     }
-    
-    .header p {
-        font-size: 40px;
-        color: #61380B;
+    .logo {
+        position: relative;
+        overflow-y: scroll;
+        z-index: 1001;
+        display: none;
+        margin-left: 0;
     }
-    
-    .header .intro {
-        width: 800px;
-    }
-    /*Estilos para el titulo de promociones*/
-    
-    #Publicidad {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
+    .input .asunto {
+        margin-top: 20px;
         width: 100%;
-    }
-    
-    .text-publish {
-        width: 100%;
-    }
-    
-    .text-publish h2 {
-        margin-top: 100px;
-        font-size: 40px;
-        color: #61380B;
-        font-family: Georgia, 'Times New Roman', Times, serif;
+        height: 24px;
         text-align: center;
     }
-    
-    .text-publish p {
-        margin-top: 50px;
-        max-width: 100%;
-        padding-left: 20%;
-        padding-right: 20%;
-        text-align: center;
-        color: #61380B;
-        font-size: 25px;
-    }
-    /*Estilos publicidad de imagenes*/
-    
-    .imagenes {
-        display: flex;
-        justify-content: space-between;
+    .input .telefono {
+        margin-top: 20px;
         width: 100%;
-        flex-wrap: wrap;
-        margin-top: 50px;
-    }
-    
-    .imagenes .imagen {
-        width: 500px;
-        padding-left: 100px;
+        height: 24px;
         text-align: center;
     }
-    
-    .imagenes p {
-        padding-left: 10px;
+    .input .servicio {
+        margin-top: 20px;
         width: 100%;
+        height: 24px;
+        text-align: center;
     }
-    
-    .imagen .Descripcion {
-        font-family: Georgia, 'Times New Roman', Times, serif;
+    .input .mail {
+        margin-top: 20px;
+        width: 100%;
+        height: 24px;
+        text-align: center;
+    }
+    .input .enviar {
+        text-align: center;
+        width: 100%;
+        height: 40%;
         font-size: 18px;
     }
-    
-    .imagenes img {
-        margin-top: 20px;
-        height: 200px;
-        width: 300px;
-    }
-    /* Estilos responsivos del mapa de contactos */
-    
     .map-responsive {
         overflow: hidden;
         padding-bottom: 30%;
@@ -153,132 +440,14 @@
         height: 0;
         margin-top: 15%;
         display: flex;
-        left: 30%;
-        right: 30%;
+        left: 0;
+        right: 0;
     }
-    
     .map-responsive iframe {
         left: 0;
         top: 0;
         height: 90%;
-        width: 50%;
+        width: 100%;
         position: absolute;
     }
-    /*Estilos para el formulario de Contacto*/
-    
-    .formulario {
-        display: flex;
-        width: 30%;
-        border: 4px solid #DBA901;
-        align-items: center;
-        margin-bottom: 30%;
-        margin-left: 680px;
-        margin-top: 5%;
-        padding: 20px;
-    }
-    
-    .input {
-        width: 100%;
-        position: relative;
-        float: left;
-        text-align: center;
-        margin-top: 12px;
-        margin-bottom: 10px;
-    }
-    
-    .input .nombre {
-        width: 30%;
-        height: 24px;
-        padding: 3px 3px;
-        text-align: center;
-    }
-    
-    .input .mail {
-        margin-top: 20px;
-        width: 30%;
-        height: 24px;
-        padding: 3px 3px;
-        text-align: center;
-    }
-    
-    .input .descripcion {
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        font-size: 20px;
-        display: inline-block;
-        width: 200px;
-    }
-    
-    .input .servicio {
-        margin-top: 20px;
-        width: 30%;
-        height: 24px;
-        padding: 3px 3px;
-        text-align: center;
-    }
-    
-    .input .telefono {
-        margin-top: 20px;
-        width: 30%;
-        height: 24px;
-        padding: 3px 3px;
-        text-align: center;
-    }
-    
-    .input .asunto {
-        margin-top: 20px;
-        width: 30%;
-        height: 24px;
-        padding: 3px 3px;
-        text-align: center;
-    }
-    
-    .input .panel-mensaje {
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        font-size: 20px;
-        /*display: inline-block;*/
-        width: 200px;
-        float: left;
-        line-height: 32px;
-    }
-    
-    .input .mensaje {
-        width: 50%;
-        display: flex;
-        justify-content: space-between;
-        margin: center;
-    }
-    
-    .input .enviar {
-        text-align: center;
-        width: 50%;
-        height: 40%;
-        font-size: 18px;
-    }
-    
-    .input .enviar:hover {
-        background-color: red;
-    }
-    
-    .text-publish-formulario {
-        margin-top: 0;
-        max-width: 100%;
-        padding-left: 20%;
-        padding-right: 20%;
-        text-align: center;
-        color: #61380B;
-        font-size: 20px;
-        margin-bottom: 15%;
-    }
-    /*Estilos foooter*/
-    
-    .footer {
-        background: #3A2F0B;
-        color: white;
-        height: 100%;
-        width: 100%;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        float: left;
-        margin: 0;
-        padding: 0;
-        text-align: center;
-    }
+}
