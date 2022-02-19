@@ -25,6 +25,7 @@ body {
 .logo {
     display: flex;
     margin-left: 10px;
+    align-items: center;
 }
 
 .logo h1 {
@@ -178,6 +179,27 @@ body {
 }
 
 
+/*Estilos boton del Login*/
+
+.boton {
+    display: flex;
+    justify-content: right;
+}
+
+.boton button {
+    width: 150px;
+    height: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    background-color: #61380B;
+    color: white;
+}
+
+.boton button:hover {
+    background-color: tomato;
+}
+
+
 /*Estilos para el formulario de Contacto*/
 
 .formulario {
@@ -284,6 +306,62 @@ body {
 }
 
 
+/*Estilos Panel de Login*/
+
+.form-login {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20%;
+    margin-bottom: 20%;
+    text-align: center;
+}
+
+.nomUsuario {
+    width: 100%;
+    display: block;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.nomUsuario .text-usuario {
+    width: 10%;
+    height: 20px;
+    margin-left: 40px;
+}
+
+.usuaContra {
+    width: 100%;
+    display: block;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 20px;
+}
+
+.usuaContra .pwd-usuario {
+    width: 10%;
+    height: 20px;
+    margin-left: 10px;
+}
+
+.btn-ingresar {
+    margin-top: 20px;
+}
+
+.btn-ingresar button {
+    width: 10%;
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: blanchedalmond;
+    color: #3A2F0B;
+}
+
+.btn-ingresar button:hover {
+    background-color: red;
+    color: white;
+}
+
+
 /*Estilos foooter*/
 
 .footer {
@@ -316,7 +394,6 @@ body {
     }
     .input {
         width: 90%;
-        /* position: relative;*/
         float: left;
         text-align: center;
         margin-top: 12px;
