@@ -1,10 +1,11 @@
+//función para redireccionar a la página de login
 function abrirLogin() {
 
     location.href = "login.html"
 
 
 }
-
+//función para validar datos del login
 function validarDatos() {
 
     // let usuario = new x();
@@ -12,11 +13,10 @@ function validarDatos() {
     console.log(inputValuesX)
         //let password = new y();
     let inputValuesY = document.getElementsByClassName("pwd-usuario");
-    console.log(inputValuesY)
+
 
     nameValue = [{ user: 'Admin', password: 'Admin1234' }, { user: 'Customer', password: 'Customer1234' }].filter(element => element.user === inputValuesX[0].value && element.password === inputValuesY[0].value);
-    console.log(inputValuesX.value)
-    console.log(inputValuesY.value)
+
 
     if (nameValue.length > 0) {
         location.href = "panel-admin.html"
@@ -39,7 +39,7 @@ function validarDatos() {
     //     }
 
     // Aquí va la condición de comparar la contraseña
-    console.log(nameValue)
+
 
 
 }
